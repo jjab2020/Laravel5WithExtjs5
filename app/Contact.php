@@ -16,7 +16,7 @@ class Contact extends Base {
 	 *
 	 * @var array
 	 */
-	//protected $fillable = ['last_name', 'first_name', 'address1', 'address2', 'city', 'state', 'zip', 'home_phone', 'work_phone', 'dob', 'email', 'password', 'dob', 'filename'];
+	protected $fillable = ['last_name', 'first_name', 'address1', 'address2', 'city', 'state', 'zip', 'home_phone', 'work_phone', 'dob', 'email', 'password', 'dob', 'filename'];
 
 	public static function baseQuery()
 	{
