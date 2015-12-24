@@ -1,0 +1,18 @@
+.profile-pic:hover {
+	cursor: pointer;
+}
+
+.contact-tn {
+	float: left;
+	margin: 4px;
+	padding: 10px 10px 5px 10px;
+	background-color: #C0C6CC;
+	border: #C0C6CC 1px solid;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.contact-tn-over {
+	cursor: pointer;
+	background-color: #F0F8FF;
+}
