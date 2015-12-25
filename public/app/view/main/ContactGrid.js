@@ -2,7 +2,9 @@ Ext.define("AddressBook.view.ContactGrid", {
     extend: "Ext.grid.Panel",
     alias: 'widget.contactgrid',
     controller: 'main',
-
+    require: [
+        'Filters.filterfield.filters.Filter'
+    ],
     config: {
         currentContact: null
     },
@@ -13,60 +15,33 @@ Ext.define("AddressBook.view.ContactGrid", {
         store: '{contacts}',
         currentContact: '{currentContact}'
     },
-    /*features: [{
-        ftype: 'searching'
-
-    }]*/
-    plugins: [Ext.create('AddressBook.view.GridFilters')],
+    plugins: [{ptype: 'filterfield'}],
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
 
         items: [{
-         text: 'Show Filters...',
-         tooltip: 'Show filter data for the store',
-         handler: 'onShowFilters'
-         }, {
-         text: 'Clear Filters',
-         glyph:AddressBook.util.Glyphs.getGlyph('clearFilter'),
-         tooltip: 'Clear all filters',
-         handler: 'onClearFilters'
-         },/*{
-         xtype: 'textfield',
-         name: 'search',
-         fieldLabel: 'Search',
-         enableKeyEvents: true,
-         listeners: {
-         keyup: 'onSearchKeyUp'
-         }
-         },*/ {
             xtype: 'button',
             text: 'Add New',
             handler: 'onAddNewClick'
-        }]
-    }, /*{
-        xtype: 'pagingtoolbar',
-        dock: 'bottom',
-        bind: {
-            store: '{contacts}'
-        },
-        pageSize: 5,
-        displayInfo: true,
-        displayMsg: 'Displaying contacts {0} - {1} of {2}',
-        emptyMsg: "No contacts to display"
-    }*/, {
-     xtype: 'PageResizer'
-     }],
+        }
+        ]
+    },{
+        xtype: 'PageResizer'
+    }],
     columns: [{
         text: 'Name',
         dataIndex: 'first_name',
         flex: 1,
-         filter: {
+        filter: {
+            xtype: 'textfield'
+        }
+        /*filter: {
          type: 'string',
          itemDefaults: {
          emptyText: 'Search for...'
          }
-         }
+         }*/
     }, {
         xtype: 'actionbuttoncolumn',
         width: 100,
@@ -81,13 +56,14 @@ Ext.define("AddressBook.view.ContactGrid", {
         //Build your own menu items based on record
         getMenuItems: function (record) {
             var items = [];
-            var action = '';
+            //var action = '';
             //Free way to build menu items
-            var element = {}, data = [];
+            //var element = {};
+            //var data = [];
             items.push({
                 text: 'Pdf',
                 glyph: AddressBook.util.Glyphs.getGlyph('pdf'),
-                handler: function (item) {
+                handler: function () {
                     /*data = []
                      action='print';
                      element.id = record.data.id;
@@ -112,7 +88,7 @@ Ext.define("AddressBook.view.ContactGrid", {
             items.push({
                 text: 'Excel',
                 glyph: AddressBook.util.Glyphs.getGlyph('excel'),
-                handler: function (item) {
+                handler: function () {
                     /*Ext.Ajax.request({
                      url: 'contacts/activate/' + record.data.id + '/' + 'Excel',
                      method: 'GET',
@@ -127,7 +103,7 @@ Ext.define("AddressBook.view.ContactGrid", {
                     window.open('contacts/activate/' + record.data.id + '/' + 'excel');
 
                 }
-            })
+            });
 
             return items;
         }
