@@ -15,7 +15,8 @@ Ext.define("AddressBook.view.ContactGrid", {
         store: '{contacts}',
         currentContact: '{currentContact}'
     },
-    plugins: [{ptype: 'filterfield'}],
+    //plugins: [{ptype: 'filterfield'}],
+    plugins: [Ext.create('AddressBook.view.GridFilters')],
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -24,6 +25,14 @@ Ext.define("AddressBook.view.ContactGrid", {
             xtype: 'button',
             text: 'Add New',
             handler: 'onAddNewClick'
+        },{
+            text: 'Show Filters...',
+            tooltip: 'Show filter data for the store',
+            handler: 'onShowFilters'
+        }, {
+            text: 'Clear Filters',
+            tooltip: 'Clear all filters',
+            handler: 'onClearFilters'
         }
         ]
     },{
@@ -34,7 +43,10 @@ Ext.define("AddressBook.view.ContactGrid", {
         dataIndex: 'first_name',
         flex: 1,
         filter: {
-            xtype: 'textfield'
+            type: 'string',
+            itemDefaults: {
+                emptyText: 'Search for...'
+            }
         }
         /*filter: {
          type: 'string',

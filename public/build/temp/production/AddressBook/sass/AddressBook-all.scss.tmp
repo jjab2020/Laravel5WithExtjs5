@@ -923,8 +923,8 @@ $include-extthemeneptune-picker-month: true;
 $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
-$include-filters-filterfield-button-operatorbutton: true;
-$include-filters-filterfield-filters-filter: true;
+$include-filters-filterfield-button-operatorbutton: false;
+$include-filters-filterfield-filters-filter: false;
 $include-packt-util-sessionmonitor: false;
 $include-packt-util-util: false;
 
