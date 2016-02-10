@@ -17,7 +17,7 @@
     "maatwebsite/excel": "~2.0.0",
     "tymon/jwt-auth": "0.5.*",
     "barryvdh/laravel-cors": "0.7.*",
-    "wemersonjanuario/laravext": "dev-master"	
+    "wemersonjanuario/laravext": "dev-master"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",

@@ -225,7 +225,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451399567954</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Laravel 5.1 with extjs">
+      <created>1451399802876</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1451399802876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
