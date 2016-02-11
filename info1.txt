@@ -1,0 +1,24 @@
+https://alfrescoshare.wordpress.com/2010/05/14/how-to-find-and-restore-a-single-document-from-your-alfresco-backup/
+http://blyx.com/page/3/
+http://blog.dbi-services.com/alfresco-some-useful-database-queries/
+http://desaille.fr/migration-alfresco-4-2f-vers-alfresco-5-0d/
+https://vienergie.wordpress.com/2014/10/12/essential-commands-for-alfresco-bart/
+http://fcorti.com/2013/02/06/alfresco-backup-script/
+http://louise.hu/poet/alfresco-uploader-with-curl/
+http://alfresco-italia.blogspot.com/2011/03/semplici-uploaders-per-alfresco.html
+url -u admin:admin http://localhost:8080/alfresco/s/api/sites/$SITE_NAME/export > site-export.zip
+https://github.com/maoo/alfresco-demo-data/blob/master/README.md
+https://vienergie.wordpress.com/2014/08/12/alfresco-bart-sauvegarder-et-restaurer/
+http://geofoss.net/2015/08/12/python-cmis-scripts-for-alfresco/
+http://customizealfresco.blogspot.com/2014/01/how-to-deleted-alfresco-content.html
+http://blog.dbi-services.com/developing-an-archive-action-for-alfresco-share-1-of-2/
+https://www.parashift.com.au/2016/01/26/recovering-deleted-files-in-alfresco/
+http://guimove.fr/linux/installer-ipkg-sur-nas-synology/
+http://akashtaker001.blogspot.com/2012/09/synology-ds112j-nas-detailed-review.html
+https://github.com/NapoleonWils0n/cerberus/blob/master/btsync/bittorent-sync-synology-nas-install.sh
+https://lokan.fr/2013/03/28/presentation-et-test-du-nas-synology-ds112j-et-ds212j/
+http://ti57.blogspot.com/2013/01/how-to-setup-git-server-on-synology-nas.html
+http://www.pastime.jp/madogiwa/a-25/
+http://jaaknt.blogspot.com/2012/10/how-to-install-ipkg-to-synology-ds112.html
+http://www.astuces-webmaster.ch/page/installer-ipkg-synology-boostrap
+http://ipkg.nslu2-linux.org/feeds/optware/ds101g/cross/stable/Packages
