@@ -1,4 +1,4 @@
-# AddressBook
+# Extjs
 
 This folder is primarily a container for the top-level pieces of the application.
 While you can remove some files and folders that this application does not use,
@@ -32,21 +32,21 @@ process.
 
 # Other Folders
 
-## AddressBook/app
+## Extjs/app
 
 This folder contains the JavaScript files for the application.
 
-## AddressBook/resources
+## Extjs/resources
 
 This folder contains static resources (typically an `"images"` folder as well).
 
-## AddressBook/overrides
+## Extjs/overrides
 
 This folder contains override classes. All overrides in this folder will be 
 automatically included in application builds if the target class of the override
 is loaded.
 
-## AddressBook/sass
+## Extjs/sass
 
 This folder contains the styling for the application's views. See AddressBook/sass/Readme.md
 for details.
